@@ -24,8 +24,6 @@ return {
         "latex",
         "markdown",
         "markdown_inline",
-
-        -- Development and utilities
         "editorconfig",
         "gitignore",
         "gitattributes",
@@ -43,14 +41,9 @@ return {
         "toml",
         "vim",
         "vimdoc",
-        
-
-        -- Web
         "html",
         "css",
         "scss",
-
-        -- Languages
         "javascript",
         "typescript",
         "python",
