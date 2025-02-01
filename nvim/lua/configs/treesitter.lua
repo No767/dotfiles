@@ -8,7 +8,6 @@ return {
     "markdown_inline",
     "editorconfig",
     "gitignore",
-    "jq",
     "json",
     "make",
     "requirements",
