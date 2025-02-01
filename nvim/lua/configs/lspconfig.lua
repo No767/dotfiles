@@ -2,7 +2,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
-local nvlsp = require "nvchad.configs.lspconfig"
 
 local servers = {
   "actionlint",
@@ -48,6 +47,7 @@ local servers = {
   "yamlfmt",
   "yamllint",
 }
+local nvlsp = require "nvchad.configs.lspconfig"
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {

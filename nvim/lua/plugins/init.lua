@@ -15,8 +15,6 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = function()
-      require "configs.treesitter"
-    end,
+    opts = require "configs.treesitter",
   },
 }
