@@ -44,8 +44,7 @@ local servers = {
   "tree-sitter-cli",
   "typescript-language-server",
   "yaml-language-server",
-  "yamlfmt",
-  "yamllint",
+  "yamlfmt"
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 

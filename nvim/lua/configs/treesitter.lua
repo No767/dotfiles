@@ -1,7 +1,5 @@
 return {
   ensure_installed = {
-    "bash",
-    "powershell",
     "dockerfile",
     "markdown",
     "markdown_inline",
@@ -21,6 +19,6 @@ return {
     "c",
     "cpp",
     "cmake",
-    "sql",
+    "sql"
   },
 }
