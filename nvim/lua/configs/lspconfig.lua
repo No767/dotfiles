@@ -1,41 +1,45 @@
--- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
-local lspconfig = require "lspconfig"
-
 local servers = {
+  "autotools_ls",
   "bashls",
   "biome",
   "clangd",
+  "cmake",
   "cssls",
   "cssmodules_ls",
   "docker_compose_language_service",
   "dockerls",
   "gradle_ls",
+  "gh_actions_ls",
   "groovyls",
   "html",
   "jqls",
   "jsonls",
   "lua_ls",
+  "lwc_ls",
   "marksman",
   "mdx_analyzer",
+  "mesonlsp",
   "nxls",
   "pyright",
+  "postgres_lsp",
+  "powershell_es",
+  "protols",
   "rust_analyzer",
+  "ruby_lsp",
   "sqlls",
+  "sqruff",
   "stylelint_lsp",
+  "stylua",
   "stylua3p_ls",
+  "systemd_lsp",
   "tailwindcss",
   "terraformls",
   "ts_ls",
   "yamlls",
 }
-local nvlsp = require "nvchad.configs.lspconfig"
 
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = nvlsp.on_attach,
-    on_init = nvlsp.on_init,
-    capabilities = nvlsp.capabilities,
-  }
-end
+vim.lsp.enable(servers)
+
+-- read :h vim.lsp.config for changing options of lsp servers

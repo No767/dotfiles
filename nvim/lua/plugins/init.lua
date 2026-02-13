@@ -15,6 +15,28 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = require "configs.treesitter",
+    opts = {
+      ensure_installed = {
+        "dockerfile",
+        "markdown",
+        "markdown_inline",
+        "gitignore",
+        "json",
+        "make",
+        "requirements",
+        "yaml",
+        "toml",
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "python",
+        "java",
+        "c",
+        "cpp",
+        "cmake",
+        "sql",
+      },
+    },
   },
 }

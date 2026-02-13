@@ -62,7 +62,7 @@ M.nvdash = {
       "   ▀██ █████▄▀█▀▄██████▄    ",
       "     ▀ ▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀   ",
       "                            ",
-      "     Powered By Neovim     ",
+      "     Powered By Neovim      ",
       "                            ",
     },
 
